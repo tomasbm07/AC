@@ -9,7 +9,7 @@ c2: .byte 'u'
 	lb $s2, c1 # colocar o char a ser trocado em $s2
 	lb $s3, c2 # colocar o char para substiruir em $s3 
 
-li $v0, 4 # Codigo para print str
+	li $v0, 4 # Codigo para print str
 
 
 loop:
