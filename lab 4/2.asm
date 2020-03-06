@@ -1,6 +1,6 @@
 .data
 A: .word 32
-B: .word 24
+B: .word 50
 C: .word 0
 
 .text

@@ -1,5 +1,5 @@
 .data
-num: .word 0xF
+num: .word 0x1FF
 
 .text
 
