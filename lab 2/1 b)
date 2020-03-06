@@ -1,0 +1,30 @@
+	li $t1, 0 # contador da coluna
+	li $t3, 256 # Comprimento - 64x4
+	li $s2, 0 # Contador de Linhas
+	li $t6, 128 # Largura - 32x4
+	li $s1, 0x10010000 # Base adress for diplay
+	li $t4 0x00000000  # 00RRGGBB
+	li $t5, 0 # soma das cores
+	li $t7, 0
+	#addi $t7, $t4, 0x00000004
+
+	
+loop: 
+	mul $t4, $t1, 0x00000100 # coluna
+	add $t5, $t4, $t7 # soma das cores
+	sw $t5, 0($s1) # Atribuir a cor ao pixel
+	addu $t1, $t1, 4 #Contador do nº de colunas
+	addi $s1, $s1, 4 # Avançar um pixel
+	bne $t1, $t3, loop # if t1 != t3 goto Loop else continue
+	
+Next_line:
+	li $t1, 0 # Reinicar o contador da coluna
+	addi $s2, $s2, 4 # Incrementar o contador da linha
+	mul $t7, $s2, 0x00010000 #linha
+	bne $s2, $t6, loop # Desenhar uma linha se t5 != t6
+
+	
+
+	
+	
+	
