@@ -1,0 +1,2 @@
+Ganho = CPI_real / CPI_ideal
+Ganho = 2.58 / 1.8
