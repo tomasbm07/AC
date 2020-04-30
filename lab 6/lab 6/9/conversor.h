@@ -1,0 +1,1 @@
+int conversor(int number);

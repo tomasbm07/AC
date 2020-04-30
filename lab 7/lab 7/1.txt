@@ -1,0 +1,30 @@
+1. gdb "file_name"
+
+2. gcc -g -ggdb -o "file_name" "file_name.c"
+	-g: tag que adiciona o debugger ao ficheiro em questão
+	-ggdb: produz informação útil e compatível com o debugger, i.e, permite
+	ver o código linha a linha e identificar melhor os bugs
+	
+3. Usando o comando break ou b. Podemos colocar um breakpoint numa função, numa linha
+do código e até colocar um breakpoint baseado numa condição
+
+4. b [func ou linha] [condição]
+Exemplo: b read_values if values == 2
+
+5. Com o comando next ou n
+
+6. Com o comando step ou s
+
+7. Com o comando continue ou c
+
+8. printf [/f] [variável]
+[/f] indica o formato do print (Exemplo: /x - hexadecimal, /d - decimal...)
+
+9. display [/f] [variável]
+[/f] indica o formato do print (Exemplo: /x - hexadecimal, /d - decimal...)
+
+10. Podemos adicionar mais variáveis á lista com o comando anterior e usar o comando
+display para mostrar todas as variáveis da lista. Se usarmos o comando enable disp
+podemos ter a lista a mostar em todos os passos do debugger
+
+11. com o comando kill

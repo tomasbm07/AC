@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include "conversor.h" 
+
+int main(){
+  int a, b, c;
+
+  printf("Enter the first number: ");
+  scanf("%d", &a);
+  printf("Enter the second number: ");
+  scanf("%d", &b);
+
+  c = soma(a, b);
+
+  printf("The sum of %d with %d is %d \n", conversor(a), conversor(b), conversor(c));
+}

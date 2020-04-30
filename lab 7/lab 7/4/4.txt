@@ -1,0 +1,5 @@
+Na passagem por referência é passada para uma função o endereço em memória
+da variável, sendo assim, ser possivel alterar o seu valor. Em C tal coisa
+não é possivel diretamente, mas ao usar ponteiros, conseguimos fazer a mesma coisa,
+passando, como argumento, um ponteiro para uma váriavel, conseguindo assim, alterar o seu
+valor dentro de uma função.
