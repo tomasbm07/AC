@@ -1,0 +1,9 @@
+Default: 16.960s
+O0: 16.780s
+O1 ou O: 2.360s
+O2: 2.300s
+O3: 5.040s
+Os: 4.760s
+Ofast: 5.060s
+
+https://prnt.sc/sciapz
